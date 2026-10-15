@@ -1,0 +1,14 @@
+# Environment variables (credentials)
+.env
+.env*.local
+
+# Node dependencies & build
+node_modules/
+dist/
+build/
+*.log
+
+# Python (if applicable)
+__pycache__/
+*.pyc
+.venv/
