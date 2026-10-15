@@ -45,6 +45,10 @@ async function start() {
   });
 }
 
-start().catch(err => {
-  console.error('❌ Error fatal al iniciar el servidor:', err);
-});
+if (!process.env.VERCEL) {
+  start().catch(err => {
+    console.error('❌ Error fatal al iniciar el servidor:', err);
+  });
+}
+
+export default app;
